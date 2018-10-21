@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 410 410">
+  <style>
+    .text {
+      fill: #e9e;
+      stroke: #000;
+      stroke-width: 6;
+      font-size: 150px;
+      font-family: helvetica;
+      text-anchor: middle;
+      alignment-baseline: middle;
+    }
+  </style>
+  <polygon x="5" y="5" width="400" height="400" rx="10%" fill="none" stroke="#000" stroke-width="10" points="200,5 400,80 400,320, 200,400 5,320 5,80" stroke-linejoin="round" />
+  <path d="M5 80 L200 60 M200 5 L200 60 L400 80" fill="transparent" stroke="black" stroke-width="10" stroke-linejoin="round" />
+  <path d="M400 80 L320 280 L400 320 M320 280 L200 400" fill="transparent" stroke="black" stroke-width="10" stroke-linejoin="round" />
+  <path d="M5 80 L80 280 L5 320 M80 280 L200 400" fill="transparent" stroke="black" stroke-width="10" stroke-linejoin="round" />
+  <path d="M200 60 L320 280 L80 280 L200 60" fill="transparent" stroke="black" stroke-width="10" stroke-linejoin="round" />
+  <text x="50%" y="50%" dx="0em" dy="0em" class="text">1</text>
+</svg>
+

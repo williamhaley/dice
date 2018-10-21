@@ -1,0 +1,77 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    font-family: arial;
+    background: #111;
+    color: #e9e;
+    font-size: 32px;
+    padding: 0 50px;
+}
+
+header span {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 0 50px;
+}
+
+.results .total {
+    background: #000;
+    font-size: 30px;
+    padding: 10px;
+    color: #e9e;
+}
+
+.results .dice {
+    display: flex;
+    margin: 10px 0;
+    position: relative;
+}
+
+.results .dice .die {
+    position: relative;
+}
+
+.results .dice .die span {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: helvetica;
+    color: #e9e;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.results .dice .die img {
+    height: 150px;
+    width: 150px;
+}
+
+button {
+    border: 1px solid #fff;
+    border-width: 1px;
+    border-radius: 5%;
+    background-color: #50b750;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 40px;
+}
+
+button:active {
+    border: 1px solid #50b750;
+    background-color: #fff;
+    color: #50b750;
+}
+

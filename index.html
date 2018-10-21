@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>Dice</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<header>
+    <span>Dice</span>
+</header>
+
+<main>
+<form>
+    <label>
+        <p>Type of Dice</p>
+        <input type="text" name="type" />
+    </label>
+    <label>
+        <p>Number of Dice</p>
+        <input type="text" name="num" />
+    </label>
+
+    <p>
+        <button type="submit">Roll</button>
+    </p>
+</form>
+
+<section class="results">
+    <div class="total">Total: <span class="value"></span></div>
+    <div class="dice"></div>
+</section>
+</main>
+
+<script src="dice.js"></script>
+</body>
+</html>
+
