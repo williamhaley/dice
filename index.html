@@ -3,6 +3,8 @@
 <head>
 <title>Dice</title>
 <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 <body>
 
@@ -11,14 +13,21 @@
 </header>
 
 <main>
+<p>Roll Dice With Varying Sides/Sizes. The default is a d20.</p>
+
 <form>
-    <label>
-        <p>Type of Dice</p>
-        <input type="text" name="type" />
-    </label>
+    <p>Type of Dice</p>
+    <div class="dice-types">
+        <input checked id="d20" type="radio" name="type" value="20" />
+        <label for="d20" class="dice-type d20"></label>
+        <input id="d6" type="radio" name="type" value="6" />
+        <label for="d6" class="dice-type d6"></label>
+        <input id="d4" type="radio" name="type" value="4" />
+        <label for="d4" class="dice-type d4"></label>
+    </div>
     <label>
         <p>Number of Dice</p>
-        <input type="text" name="num" />
+        <input type="text" name="num" value="1" />
     </label>
 
     <p>

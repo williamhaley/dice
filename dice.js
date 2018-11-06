@@ -3,7 +3,6 @@ const $dice = $results.querySelector('.dice');
 const $totalValue = $results.querySelector('.total .value');
 const $form = document.querySelector('form');
 const $numDice = $form.querySelector('input[name="num"]');
-const $typeDice = $form.querySelector('input[name="type"]');
 
 function roll(maxValue) {
     const result = Math.floor(Math.random() * maxValue) + 1;
@@ -13,12 +12,16 @@ function roll(maxValue) {
     $wrapper.classList.add('die');
 
     const $img = document.createElement('img');
-    $img.setAttribute('src', `/dice/d${maxValue}.svg`);
+    let suffix = '';
+    if (maxValue === 6 || maxValue === 4) {
+        suffix = `-${result}`;
+    } else {
+        const $txt = document.createElement('span');
+        $txt.innerHTML = result;
+        $wrapper.appendChild($txt);
+    }
+    $img.setAttribute('src', `/static/d${maxValue}${suffix}.svg`);
     $wrapper.appendChild($img);
-
-    const $txt = document.createElement('span');
-    $txt.innerHTML = result;
-    $wrapper.appendChild($txt);
 
     $dice.appendChild($wrapper);
 
@@ -39,6 +42,7 @@ function onSubmit(event) {
         numDice = 1;
     }
 
+    const $typeDice = $form.querySelector('input[name="type"]:checked');
     let typeDice = parseInt($typeDice.value, 10);
     if (isNaN(typeDice) || typeDice < 1) {
         typeDice = 1;
